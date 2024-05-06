@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --variable-color: crimson;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 90px;
+}
+
+@property --gradiente{
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 300px;
+}
+
+
+.hero{
+    height: 300px;
+}
+
+
+
+
+.hero__btn{
+    font: inherit;
+    background-color: purple;
+    color: white;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.card{
+    margin: 0 auto;
+    width: 300px;
+
+    box-shadow: 0 0 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__img{
+    width: 100%;
+}
+
+.card__texts{
+    padding: 1.5rem .6rem;
+}
+
+.card__title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #000;
+}
+
+.card__btn{
+    background-color: purple;
+
+    font: inherit;
+    color: white;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+}
+
+
+
