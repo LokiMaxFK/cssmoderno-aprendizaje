@@ -42,6 +42,8 @@ body{
     transform-origin: top right;
     transform: var(--message-transform);
     --top-message-rotate: -1;
+
+
     animation: message 2s forwards;
 }
 
@@ -87,8 +89,6 @@ body{
     transform-box: fill-box;
     transform: var(--content-message);
 }
-
-
 
 #stars{
     opacity: var(--stars-opacity);

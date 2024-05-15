@@ -60,3 +60,7 @@ body {
 }
 
 
+.input:where(:focus, :not(:placeholder-shown)) + .label__name {
+    transform: translateY(-50%) scale(.7);
+    background-color: white;
+}
