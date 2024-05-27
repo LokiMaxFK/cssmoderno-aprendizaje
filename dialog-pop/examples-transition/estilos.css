@@ -1,0 +1,9 @@
+.titulo-secundario{
+    display: none;
+    opacity: 0;
+    transition: 1s opacity, display 1s allow-discrete;
+}
+
+
+
+

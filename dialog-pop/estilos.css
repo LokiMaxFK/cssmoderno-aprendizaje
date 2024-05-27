@@ -1,0 +1,76 @@
+::after, ::before, *{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.btn-popover{
+    display: block;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    background-color: slateblue;
+    color: white;
+    font: inherit;
+    padding: 1rem 2rem;
+
+    margin: 50px auto;
+}
+
+.popover{
+    margin: auto;
+
+    width: min(50%, 400px);
+    height: clamp(200px, 80vh, 400px);
+    border-radius: 10px;
+    border-color: royalblue;
+    padding: 2rem ;
+
+
+    transform: translateY(300px);
+    opacity: 0;
+    transition:display .6s allow-discrete, overlay .6s allow-discrete, transform .6s, opacity .6s;
+}
+
+.popover:popover-open {
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+
+
+
+.popover::backdrop{
+    background-color: #0000007f;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.popover:popover-open::backdrop{
+    transform: translateY(0%);
+   
+}
+
+/*
+@starting-style {
+   
+}
+*/
+
+.popover__title{
+    margin-bottom: 2rem;
+}
+
+.popover__img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+

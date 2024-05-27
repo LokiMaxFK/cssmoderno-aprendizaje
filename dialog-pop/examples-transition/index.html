@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+    <h1 class="titulo-principal">¡Soy un h1!</h1>
+    <h2 class="titulo-secundario">¡Soy un h2!</h2>
+    <button class="btn">Ocultar/Eliminar</button>
+
+    <script>
+        const h2 = document.querySelector("h2");
+        const btn = document.querySelector("button");
+
+        btn.addEventListener("click", ()=>{
+            h2.classList.toggle("mostrar");
+        });
+        
+    </script>
+    
+</body>
+</html>
